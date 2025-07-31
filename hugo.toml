@@ -1,0 +1,27 @@
+baseURL = 'https://morabp27.github.io/Static-Website-BodenMoraski/'
+languageCode = 'en-us'
+title = 'Boden Moraski'
+theme = 'bearcub'
+
+# Enable features
+enableGitInfo = false
+enableEmoji = true
+
+[params]
+  description = "High school founder, writer, and researcher passionate about building tools that actually make people's lives better"
+  
+  [params.author]
+    name = "Boden Moraski"
+    email = "boden@example.com"
+  
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/posts/my-first-post/"
+    weight = 2
