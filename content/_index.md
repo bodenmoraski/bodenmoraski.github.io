@@ -1,35 +1,36 @@
 +++
 title = "Boden Moraski"
-description = "High school founder, writer, and researcher passionate about building tools that actually make people's lives better"
+description = "High school researcher and entrepreneur building AI tools that help people learn better and think more deeply"
 +++
 
-# Welcome! 👋
+# Welcome!
 
-I'm **Boden Moraski**, a high school founder, writer, and researcher passionate about building tools that actually make people's lives better.
+I'm **Boden Moraski**, a high school researcher and entrepreneur focused on building AI tools that help people learn better, think more deeply, and flourish in mind, body, and spirit—while studying the philosophical implications of the technologies shaping our future.
 
-## What I'm Working On
+## Current Work
 
-### 🎯 AI Ethical Compass
-Leading development on a platform that helps students and teachers explore the ethics of AI in the classroom.
+Right now I'm primarily interested in AI Safety [https://www.anthropic.com/news/core-views-on-ai-safety], especailly scalable oversight [https://bluedot.org/blog/scalable-oversight-intro], XXYY, and prosaic alignment [https://aisafety.info/questions/89LM/What-is-prosaic-alignment]. I also think that advocacy, community-building, and governance are key to supporting these research directions. 
 
-### 🚀 SPIG Technologies
-Serving as CEO & Co-Founder, building innovative solutions.
+I'm also interested in ethical frameworks [https://aese.psu.edu/teachag/curriculum/modules/bioethics-1/what-are-ethical-frameworks] and how they interact and arise and in both biological and artificial systems. I personally tend to operate through an ever-evolving XX of Virtue Ethics [https://plato.stanford.edu/entries/ethics-virtue/], Rationalism [https://plato.stanford.edu/entries/rationalism-empiricism], Confucianism [https://plato.stanford.edu/entries/confucius], and Utilitarianism, predominantly in the context of Longtermism [https://www.effectivealtruism.org/articles/longtermism]
 
-### 🎨 Shady.Hacks
-Marketing Director, helping create amazing hackathon experiences.
+**AI Ethical Compass** — Creating a platform that uses scenario-based learning to help educators teach responsible AI use. Featured project in the Intel + ISTE AI Innovators Challenge, with pilot programs launching in schools.
 
-### 🔬 Research at CMU
-Conducting research at the **Carnegie Mellon University Dietrich School of Philosophy**.
+**SPIG Technologies** — Built the only publicly available grading platform with real-time group grading. Piloting in U.S. schools with interest from 10+ districts after being showcased at the 2024 National AP Convention.
 
-## Previous Experience
+**CMU Philosophy & CS Research** — Contributing to "Sway," an AI-guided dialogue platform that pairs students with opposing views to foster civil discourse within ethical constraints, reaching 10k+ users worldwide.
 
-- **BindWell** (YC W25)
-- **Glimmer Health**
+**AI Education Curriculum** — Collaborating with AI4K12 to design national high school AI education curriculum.
+
+## Research Focus
+
+My independent research explores moral alignment in large language models, specifically how chain-of-thought prompting affects ethical reasoning. I'm also developing quantum algorithms and optimization techniques, with work published and recognized at regional science fairs.
+
+## Recognition
+
+Recent highlights include winning Pennsylvania's Congressional App Challenge, placing 1st in state FBLA Data Analysis, and being selected as a HouseOfCode Lightning Talk speaker at the Capitol. I'm also a research fellow with Frontlines Foundation and was selected for the PAIR Program in the UK.
 
 ## Get In Touch
 
-I'm always interested in connecting with fellow builders and researchers. Feel free to reach out!
+I'm always interested in connecting with fellow researchers, builders, and anyone passionate about the intersection of AI, ethics, and education.
 
 ---
-
-*Building the future, one ethical tool at a time.* 
