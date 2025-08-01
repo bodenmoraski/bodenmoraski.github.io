@@ -1,0 +1,4 @@
+# Jekyll configuration to ensure GitHub Pages serves the built site
+# This file tells GitHub Pages to ignore README.md and serve index.html instead
+include: []
+exclude: ["README.md"] 

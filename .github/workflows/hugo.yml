@@ -48,6 +48,12 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
             
+      - name: Verify build output
+        run: |
+          ls -la public/
+          echo "Checking if index.html exists:"
+          test -f public/index.html && echo "✅ index.html found" || echo "❌ index.html missing"
+            
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
