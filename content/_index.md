@@ -5,7 +5,9 @@ description = "High school researcher and entrepreneur building AI tools that he
 
 # Welcome!
 
-I'm **Boden Moraski**, a high school researcher and writer deeply passionate about AI Safety and the responsible development of artificial intelligence. I enjoy combining technical research with practical tool- and community-building to help ensure AI systems are developed safely and beneficially, while exploring how we can help people learn better and think more deeply about these crucial challenges.
+Hi! I'm **Boden Moraski**, a high school researcher and writer interested in understand myself, others, and the world around us, and using these observations to guide my decisions. Currently, I'm focused on AI Safety and the responsible development of artificial intelligence. I'm drawn to this work because it feels like some of the most important research we can be doing to help guide humanity toward a flourishing future. 
+
+I enjoy combining technical research with practical tool and community-building to help ensure AI systems are developed safely and beneficially.
 
 ## Current Work
 
@@ -17,15 +19,19 @@ I'm currently engaged in several projects that align with these interests. As of
 
 Leading development on the [AI Ethical Compass](https://ai-ethical-compass.vercel.app), an educational platform using scenario-based learning to help teachers integrate responsible AI practices in their classrooms. The project was recognized as one of ~three featured initiatives worldwide in the Intel + ISTE AI Innovators Challenge.
 
+Contributing to research at Carnegie Mellon University's Philosophy and Computer Science departments, working on [Sway](https://swaybeta.ai) - a dialogue platform that explores how AI can facilitate meaningful conversations while adhering to ethical principles. The platform has been adopted by over 30 colleges and 120+ educators representing over 10,000 students. 
+
 Co-founding SPIG Technologies, an innovative group grading platform currently being piloted in U.S. schools. The platform aims to make collaborative assessment more efficient and accessible for educators. This was recently presented at the 2024 AP National Convention and U.S. Capitol. 
 
-Contributing to research at Carnegie Mellon University's Philosophy and Computer Science departments, working on [Sway](https://swaybeta.ai) - a dialogue platform that explores how AI can facilitate meaningful conversations while adhering to ethical principles. The platform has been adopted by over 30 colleges.
-
-I'm also helping shape AI education through collaboration with [AI4K12](https://ai4k12.org/) on developing foundational curriculum for high school students, and serving as a technology research fellow at [Frontlines Foundation](https://www.frontlines.foundation), where I contribute to AI educational legislation.
+I'm also helping shape AI education through collaboration with [AI4K12](https://ai4k12.org/) on developing nationwide AI curricula for high schools, and serving as a policy research fellow at [Frontlines Foundation](https://www.frontlines.foundation), where I contribute to state-wide AI educational legislation.
 
 ## Other Interests
 
-Adjacent to these interests and work, I am interested in and have previously engaged with [social simulation and modeling](https://en.wikipedia.org/wiki/Social_simulation), especially around [political polarization](https://www.populismstudies.org/Vocabulary/political-polarization), [moral uncertainty](https://plato.stanford.edu/entries/moral-decision-uncertainty/), [theodicies](https://plato.stanford.edu/entries/theodicies), [behavioral economics](https://www.investopedia.com/terms/b/behavioraleconomics.asp#:~:text=Behavioral%20economics%20is%20the%20study%20of%20psychology%20that%20analyzes%20the,%2C%20discrimination%2C%20and%20herd%20mentality.), and [information theory](https://www.britannica.com/science/information-theory). 
+Adjacent to these interests and work, I am interested in and have previously engaged with [social simulation and modeling](https://en.wikipedia.org/wiki/Social_simulation), especially around [political polarization](https://www.populismstudies.org/Vocabulary/political-polarization), [moral uncertainty](https://plato.stanford.edu/entries/moral-decision-uncertainty/), [theodicies](https://plato.stanford.edu/entries/theodicies), [behavioral economics](https://www.investopedia.com/terms/b/behavioraleconomics.asp#:~:text=Behavioral%20economics%20is%20the%20study%20of%20psychology%20that%20analyzes%20the,%2C%20discrimination%2C%20and%20herd%20mentality.), and [information theory](https://www.britannica.com/science/information-theory). I always welcome hearing from anybody interested in these. 
+
+## Recognition
+
+I'm incredibly grateful to have recieved some incredible recignition for my work. Some recent highlights include placing top 5 nationally in Data Analysis at FBLA, presenting on AI Ethics at the U.S. Capitol, having AI Ethical Compass selected as a featured project in the 2025 ISTE+ACSD AI Innovators Challenge, and winning the 2025 PA-05 Congressional App Challenge for SPIG. Additioanlly, 
 
 ## Contact
 
@@ -41,7 +47,7 @@ Socials:
 
 [LessWrong: BodenMoraski](https://www.lesswrong.com/users/boden-moraski)
 
-[Discord: BodenMoraski](bdnmrski)
+Discord: bdnmrski
 
 [X: Boden Moraski](https://x.com/boden_moraski/likes) (no longer used)
 
