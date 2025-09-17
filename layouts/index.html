@@ -7,7 +7,7 @@
     {{ end }}
   </div>
   <div class="home-hero__right" aria-hidden="true">
-    {{ $src := .Params.hero_image | default "/Static-Website-BodenMoraski/images/hero.jpg" }}
+    {{ $src := .Params.hero_image | default "/images/hero.jpg" | relURL }}
     <div class="home-hero__image" style="background-image:url('{{ $src }}'); background-color: #333;"></div>
   </div>
 </section>

@@ -1,7 +1,7 @@
 +++
 title = "Boden Moraski"
 description = "Hi, I'm Boden! This is my website -- my own personal simulacrum. Feel free to browse about here, or visit my contact or experience pages."
-hero_image = "/Static-Website-BodenMoraski/images/hero.jpg"
+hero_image = "/images/hero.jpg"
 +++
 
 I have a range of interests, but I'm most fundamentally concerned with why (and how!) we make decisions (especially moral decisions) and how we can make the future better. 

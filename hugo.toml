@@ -1,4 +1,4 @@
-baseURL = 'https://morabp27.github.io/Static-Website-BodenMoraski/'
+baseURL = 'https://bodenmoraski.github.io/'
 languageCode = 'en-us'
 title = 'Boden Moraski'
 theme = 'bearcub'
@@ -11,6 +11,8 @@ enableEmoji = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+canonifyURLs = true
 
 [params]
   description = "High school founder, writer, and researcher passionate about building tools that actually make people's lives better"
