@@ -7,21 +7,33 @@ theme = 'bearcub'
 enableGitInfo = false
 enableEmoji = true
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   description = "High school founder, writer, and researcher passionate about building tools that actually make people's lives better"
   
   [params.author]
     name = "Boden Moraski"
-    email = "boden@example.com"
-  
+    email = "bodenmoraski@gmail.com"
+
 [menu]
   [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
+    identifier = "experience"
+    name = "Experience"
+    url = "/experience/"
     weight = 1
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/posts/my-first-post/"
+    identifier = "writing"
+    name = "Writing"
+    url = "/posts/"
     weight = 2
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+  
+

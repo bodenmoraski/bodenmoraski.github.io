@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="home-hero">
+  <div class="home-hero__left">
+    <h1 class="home-hero__title">{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="home-hero__tagline">{{ . }}</p>
+    {{ end }}
+  </div>
+  <div class="home-hero__right" aria-hidden="true">
+    {{ $src := default "/Static-Website-BodenMoraski/images/hero.jpg" .Params.hero_image }}
+    <div class="home-hero__image" style="background-image:url('{{ $src }}'); background-color: #333;"></div>
+  </div>
+</section>
+
+<section class="home-section">
+  {{ .Content }}
+</section>
+{{ end }}
+
