@@ -20,4 +20,4 @@ Adjacent to these interests and work, I am interested in and have previously eng
 
 ## Get in Touch
 
-I'm always interested in connecting with fellow researchers, builders, and anyone passionate about AI, ethics, or education. [Reach out here](/Static-Website-BodenMoraski/contact/) or email me at bodenmoraski [at] gmail.com.
+I'm always interested in connecting with fellow researchers, builders, and anyone passionate about AI, ethics, or education. [Reach out here](/contact/) or email me at bodenmoraski [at] gmail.com.
