@@ -4,7 +4,7 @@ description = "Hi, I'm Boden! This is my website -- my own personal simulacrum. 
 hero_image = "/images/hero.jpg"
 +++
 
-I have a range of interests, but right now I'm especially interested in moral philosophy, AI safety, and the broad question of how we can make the future better. I'm currently a student at Shady Side Academy and serve as Co-Executve Director at the Center for Youth and AI.  
+I have a range of interests, but right now I'm especially interested in moral philosophy, AI safety, and the broad question of how we can make the future better. 
 
 ## Current Work
 
