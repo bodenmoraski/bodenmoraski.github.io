@@ -30,7 +30,7 @@ canonifyURLs = true
   [[menu.main]]
     identifier = "writing"
     name = "Writing"
-    url = "/posts/"
+    url = "https://bodenmoraski.substack.com/"
     weight = 2
   [[menu.main]]
     identifier = "contact"
