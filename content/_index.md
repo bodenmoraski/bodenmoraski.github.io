@@ -14,7 +14,9 @@ Most of my writing can be found on my [Substack](https://bodenmoraski.substack.c
 
 ## Research and Work Interests
 
-Right now I'm primarily interested in [AI Safety](https://www.anthropic.com/news/core-views-on-ai-safety). Technically, I'm most interested in [scalable oversight](https://bluedot.org/blog/scalable-oversight-intro) and [risk and capabilities benchmarking](https://ai-safety-atlas.com/chapters/05). I also believe that governance, advocacy, and community-building in AI Safety are all crucial to support and complement these research directions.
+Right now I'm primarily interested in [AI Safety](https://www.anthropic.com/news/core-views-on-ai-safety). Technically, I'm most interested in [scalable oversight](https://bluedot.org/blog/scalable-oversight-intro), and [risk and capabilities benchmarking](https://ai-safety-atlas.com/chapters/05), and, foremost, building [AI for AI safety](). I'm also excited by AI governance and building    
+
+advocacy, and community-building in AI Safety are all crucial to support and complement these research directions.
 
 I'm also interested in [ethical frameworks](https://aese.psu.edu/teachag/curriculum/modules/bioethics-1/what-are-ethical-frameworks) and how they interact and arise in both biological and artificial systems.
 

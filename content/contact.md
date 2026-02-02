@@ -3,19 +3,16 @@ title = "Contact"
 description = "Get in touch with Boden Moraski"
 +++
 
-# Get in Touch
-
 I'm always interested in connecting with fellow researchers, builders, and anyone passionate about AI, ethics, or education.
 
 ## Email
 
-The best way to reach me is at **bodenmoraski [at] gmail.com**
+The best way to reach me is at **bodenmoraski [at] gmail [dot] com**
 
 ## Social & Professional Networks
 
 - [LinkedIn (Boden Moraski)](https://linkedin.com/in/boden-moraski)
 - [LessWrong: BodenMoraski](https://www.lesswrong.com/users/boden-moraski)
-
 - [Carrd: Boden Moraski](https://boden-moraski.carrd.co) 
 - Discord: bdnmrski
 - [X: Boden Moraski](https://x.com/boden_moraski) 
