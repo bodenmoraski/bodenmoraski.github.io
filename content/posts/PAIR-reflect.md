@@ -1,4 +1,10 @@
- - imageine you're on the plane home and the camp went extraordinarilty well for you. What would have happened? 
+ ---
+title: "PAIR Reflect"
+date: 2026-01-15
+draft: true
+---
+
+- imageine you're on the plane home and the camp went extraordinarilty well for you. What would have happened? 
      - enjoyed the time
      - spent a lot of tie with interesting people 
      - learned from and networked with lots of unique and influential people in areas I'm interested in
