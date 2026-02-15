@@ -1,1 +1,25 @@
-<div class="territory-badge">map ≠ territory</div>
+<script>
+function toggleTheme() {
+  const html = document.documentElement;
+  const current = html.getAttribute('data-theme');
+  const next = current === 'light' ? null : 'light';
+
+  if (next) {
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  } else {
+    html.removeAttribute('data-theme');
+    localStorage.removeItem('theme');
+  }
+  updateIcon();
+}
+
+function updateIcon() {
+  const isDark = !document.documentElement.getAttribute('data-theme');
+  document.querySelectorAll('.theme-icon').forEach(el => {
+    el.textContent = isDark ? '☀' : '☾';
+  });
+}
+
+updateIcon();
+</script>

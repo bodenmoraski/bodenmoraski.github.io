@@ -1,19 +1,7 @@
 {{ define "main" }}
-<section class="home-hero">
-  <div class="home-hero__left">
-    <h1 class="home-hero__title">{{ .Title }}</h1>
-    {{ with .Params.description }}
-    <p class="home-hero__tagline">{{ . }}</p>
-    {{ end }}
-  </div>
-  <div class="home-hero__right" aria-hidden="true">
-    {{ $src := .Params.hero_image | default "/images/hero.jpg" | relURL }}
-    <div class="home-hero__image" style="background-image:url('{{ $src }}'); background-color: #333;"></div>
-  </div>
-</section>
-
-<section class="home-section">
-  {{ .Content }}
-</section>
+<article class="home">
+  <section class="intro">
+    {{ .Content }}
+  </section>
+</article>
 {{ end }}
-
