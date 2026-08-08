@@ -1,5 +1,6 @@
 +++
 title = "Boden Moraski"
+description = "Student, writer, and researcher. Co-runs the Center for Youth and AI; researching AI and civic reasoning at Carnegie Mellon."
 +++
 
 <div class="hero-section">

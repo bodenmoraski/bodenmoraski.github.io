@@ -1,6 +1,6 @@
 +++
-title = ""
-description = "Professional experience, projects, and recognition"
+title = "CV"
+description = "Resume and professional background"
 date = 2025-07-01
 +++
 

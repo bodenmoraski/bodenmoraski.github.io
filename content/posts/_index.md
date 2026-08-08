@@ -1,6 +1,6 @@
 +++
 title = "Posts"
-description = "My writing and essays"
+description = "Essays and writing on Terminal Values"
 date = 2025-10-11
 +++
 

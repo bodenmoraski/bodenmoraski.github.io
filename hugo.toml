@@ -15,7 +15,7 @@ enableEmoji = true
 canonifyURLs = true
 
 [params]
-  description = "High school founder, writer, and researcher passionate about building tools that actually make people's lives better"
+  description = "Student, writer, and researcher. Co-runs the Center for Youth and AI; researching AI and civic reasoning at Carnegie Mellon."
   
   [params.author]
     name = "Boden Moraski"
@@ -24,7 +24,7 @@ canonifyURLs = true
 [menu]
   [[menu.main]]
     identifier = "experience"
-    name = "Experience"
+    name = "CV"
     url = "/experience/"
     weight = 1
   [[menu.main]]
