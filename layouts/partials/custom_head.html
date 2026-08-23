@@ -167,17 +167,21 @@ li {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 3rem;
-  align-items: start;
-  margin-bottom: 2rem;
+  align-items: center;
+  margin-bottom: 0;
 }
 
 .hero-text {
-  padding-top: 0.5rem;
+  padding-top: 0;
 }
 
 .hero-text p {
   font-size: 1.05rem;
   margin-bottom: 1.2rem;
+}
+
+.hero-text p:last-child {
+  margin-bottom: 0;
 }
 
 .hero-image {
@@ -206,15 +210,17 @@ li {
 
 /* Details/Summary for collapsible sections */
 details {
-  margin: 1.5rem 0;
+  margin: 0;
 }
 
 summary {
   cursor: pointer;
-  font-family: var(--font-body);
-  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--text);
-  padding: 0.3rem 0;
+  line-height: 1.3;
+  padding: 0;
   list-style: none;
 }
 

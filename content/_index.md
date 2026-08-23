@@ -6,9 +6,9 @@ description = "Student at Shady Side Academy. Developing AI character evaluation
 <div class="hero-section">
 <div class="hero-text">
 
-Hi — I'm Boden! 
+Hi — I'm Boden! I'm currently a student at Shady Side Academy in Pittsburgh. 
 
-I'm currently a student at Shady Side Academy in Pittsburgh. My main goals are to improve the future and live a beautiful life, though I am still learning how to do both.
+My main goals are to improve the future and live a beautiful life, though I am still learning how to do both.
 
 I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing [AI character evaluations](https://character-evals.org) and running the [Center for Youth and AI](https://youth-ai.org), a national advocacy organization, among other commitments. There's more detail on my [CV](/experience/), if that's what you're here for.
 
@@ -35,8 +35,6 @@ I mess up often; you can tell me anonymously [here](https://www.admonymous.co/bo
 - The Nuclear Freeze movement of the 1980s, and how it parallels modern mass movements
 
 </details>
-
----
 
 ## Some things I love:
 
