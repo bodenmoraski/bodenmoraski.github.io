@@ -10,9 +10,9 @@ Hi — I'm Boden! I'm currently a student at Shady Side Academy in Pittsburgh.
 
 My main goals are to improve the future and live a beautiful life, though I am still learning how to do both.
 
-I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing [AI character evaluations](https://character-evals.org) and running the [Center for Youth and AI](https://youth-ai.org), among other commitments. There's more detail on my [CV](/experience/), if that's what you're here for.
+I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing AI character evaluations and running the Center for Youth and AI, among other commitments. There's more [detail on my CV](/experience/), if that's what you're here for.
 
-I mess up often; you can tell me anonymously [here](https://www.admonymous.co/boden-moraski). And don't hesitate to [reach out](/contact/) if you want to say hi!
+I mess up often; you can give me anonymous feedback [here](https://www.admonymous.co/boden-moraski). And don't hesitate to [reach out](/contact/) if you want to say hi!
 
 </div>
 <img src="/images/hero.jpg" alt="Boden Moraski" class="hero-image" />
