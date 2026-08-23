@@ -15,7 +15,7 @@ enableEmoji = true
 canonifyURLs = true
 
 [params]
-  description = "Student, writer, and researcher. Co-runs the Center for Youth and AI; researching AI and civic reasoning at Carnegie Mellon."
+  description = "Student at Shady Side Academy. Developing AI character evaluations and running the Center for Youth and AI."
   
   [params.author]
     name = "Boden Moraski"

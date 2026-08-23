@@ -1,14 +1,18 @@
 +++
 title = "Boden Moraski"
-description = "Student, writer, and researcher. Co-runs the Center for Youth and AI; researching AI and civic reasoning at Carnegie Mellon."
+description = "Student at Shady Side Academy. Developing AI character evaluations and running the Center for Youth and AI."
 +++
 
 <div class="hero-section">
 <div class="hero-text">
 
-Hi — I'm Boden! I'm currently a student at Shady Side Academy, and am broadly interested in exploring how we can use our understanding of the world to improve the future.
+Hi — I'm Boden! 
 
-I currently co-run the [Center for Youth and AI](https://youth-ai.org), a national AI Advocacy organization, am researching AI's impacts on civic reasoning at [Sway](https://www.swaybeta.ai/home) out of Carnegie Mellon University, among other [commitments](/experience/). Most of my public writing lives on my [Substack](https://bodenmoraski.substack.com/).
+I'm currently a student at Shady Side Academy in Pittsburgh. My main goals are to improve the future and live a beautiful life, though I am still learning how to do both.
+
+I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing [AI character evaluations](https://character-evals.org) and running the [Center for Youth and AI](https://youth-ai.org), a national advocacy organization, among other commitments. There's more detail on my [CV](/experience/), if that's what you're here for.
+
+I mess up often; you can tell me anonymously [here](https://www.admonymous.co/boden-moraski). Most of my public writing lives on my [Substack](https://bodenmoraski.substack.com/), though consistency varies. And don't hesitate to [reach out](/contact/) if you want to say hi!
 
 </div>
 <img src="/images/hero.jpg" alt="Boden Moraski" class="hero-image" />
@@ -17,14 +21,17 @@ I currently co-run the [Center for Youth and AI](https://youth-ai.org), a nation
 ---
 
 <details>
-<summary>Research interests (click to expand)</summary>
+<summary>Research interests</summary>
 
-- AI Safety and Security
+- AI safety and security
   - AI character
   - Automated alignment research
+  - Scalable evaluations and oversight
 - Moral philosophy
+  - Moral uncertainty and cluelessness
+  - Technological accelerationism
 - Progress studies and mechanism design for pro-social technologies
-- Computational Social Science, especially surrounding multi-agent systems and political polarization
+- Computational social science, especially multi-agent systems and game theory
 - The Nuclear Freeze movement of the 1980s, and how it parallels modern mass movements
 
 </details>
@@ -44,7 +51,7 @@ I currently co-run the [Center for Youth and AI](https://youth-ai.org), a nation
 <li>Urban zoning reform</li>
 <li>Well-designed survey questions</li>
 <li>Sleek, modern architecture</li>
-<li>Poetry in Cambria font</li>
+<li>Cambria font</li>
 <li>LLM attractor states</li>
 <li><em>Good Will Hunting</em></li>
 <li>Ambitious biotech startups</li>
