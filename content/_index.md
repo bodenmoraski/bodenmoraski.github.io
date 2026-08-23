@@ -10,31 +10,15 @@ Hi — I'm Boden! I'm currently a student at Shady Side Academy in Pittsburgh.
 
 My main goals are to improve the future and live a beautiful life, though I am still learning how to do both.
 
-I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing [AI character evaluations](https://character-evals.org) and running the [Center for Youth and AI](https://youth-ai.org), a national advocacy organization, among other commitments. There's more detail on my [CV](/experience/), if that's what you're here for.
+I'm fascinated by a wide array of topics, but these days most of my work ties back to AI: I'm developing [AI character evaluations](https://character-evals.org) and running the [Center for Youth and AI](https://youth-ai.org), among other commitments. There's more detail on my [CV](/experience/), if that's what you're here for.
 
-I mess up often; you can tell me anonymously [here](https://www.admonymous.co/boden-moraski). Most of my public writing lives on my [Substack](https://bodenmoraski.substack.com/), though consistency varies. And don't hesitate to [reach out](/contact/) if you want to say hi!
+I mess up often; you can tell me anonymously [here](https://www.admonymous.co/boden-moraski). And don't hesitate to [reach out](/contact/) if you want to say hi!
 
 </div>
 <img src="/images/hero.jpg" alt="Boden Moraski" class="hero-image" />
 </div>
 
 ---
-
-<details>
-<summary>Research interests</summary>
-
-- AI safety and security
-  - AI character
-  - Automated alignment research
-  - Scalable evaluations and oversight
-- Moral philosophy
-  - Moral uncertainty and cluelessness
-  - Technological accelerationism
-- Progress studies and mechanism design for pro-social technologies
-- Computational social science, especially multi-agent systems and game theory
-- The Nuclear Freeze movement of the 1980s, and how it parallels modern mass movements
-
-</details>
 
 ## Some things I love:
 
@@ -60,3 +44,16 @@ I mess up often; you can tell me anonymously [here](https://www.admonymous.co/bo
 <li>Salt Lake City, UT</li>
 <li>The month of May</li>
 </ul>
+
+## Research interests
+
+- AI safety and security
+  - AI character
+  - Automated alignment research
+  - Scalable evaluations and oversight
+- Moral philosophy
+  - Moral uncertainty and cluelessness
+  - Technological accelerationism
+- Progress studies and mechanism design for pro-social technologies
+- Computational social science, especially multi-agent systems and game theory
+- The Nuclear Freeze movement of the 1980s, and how it parallels modern mass movements
