@@ -40,7 +40,7 @@
   for(const d of [journal,help])d.addEventListener('close',()=>world.focus({preventScroll:true}));
   let tourTimer=null,tourRemaining=0,tourDuration=0,tourLast=0;
   function stopTour(){clearInterval(tourTimer);tourTimer=null;$('#tour-toggle').textContent='▶ GUIDED TOUR';$('#tour-toggle').setAttribute('aria-pressed','false');$('#tour-track').hidden=true;}
-  function markerHTML(p){return (p.markers?.length?`<div class="institution-markers">${p.markers.map(m=>`<span>${esc(m)}</span>`).join('')}</div>`:'')+(p.context?`<p class="institution-context">${esc(p.context)}</p>`:'');}
+  function contextHTML(p){return (p.context?`<p class="institution-context">${esc(p.context)}</p>`:'');}
   function proofLinks(p,firstOnly=false){const links=firstOnly?p.links.slice(0,1):p.links;return links.map(([label,url])=>`<a target="_blank" rel="noopener noreferrer" href="${esc(url)}">${esc(label)}</a>`).join('');}
   function showEntry(n,manual=true){
     const focusWasMenu=$('#project-menu').contains(document.activeElement);
@@ -48,11 +48,11 @@
     const c=data[route];if(!c)return;entry=Math.max(-1,Math.min(c.projects.length-1,n));
     $('#project-menu').innerHTML=`<button data-entry="-1" aria-current="${entry===-1}">Room overview</button>`+c.projects.map((p,i)=>`<button data-entry="${i}" aria-current="${i===entry}">${esc(p.title)}</button>`).join('');
     if(entry===-1){
-      $('#project-detail').innerHTML=`<p class="entry-kicker">ROOM NOTES / AT A GLANCE</p><h2 class="overview-title">${esc(c.name)}</h2><div class="room-overview">${c.projects.map((p,i)=>`<article class="overview-item"><span class="overview-number">0${i+1}</span><div><button class="overview-heading" data-inspect="${i}">${esc(p.title)}</button><p>${esc(p.hook)}</p>${markerHTML(p)}<div class="overview-links"><button data-inspect="${i}">INSPECT > </button>${proofLinks(p,true)}</div></div></article>`).join('')}</div>`;
+      $('#project-detail').innerHTML=`<p class="entry-kicker">ROOM NOTES / AT A GLANCE</p><h2 class="overview-title">${esc(c.name)}</h2><div class="room-overview">${c.projects.map((p,i)=>`<article class="overview-item"><span class="overview-number">0${i+1}</span><div><button class="overview-heading" data-inspect="${i}">${esc(p.title)}</button><p>${esc(p.hook)}</p>${contextHTML(p)}<div class="overview-links"><button data-inspect="${i}">INSPECT > </button>${proofLinks(p,true)}</div></div></article>`).join('')}</div>`;
       $('#page-count').textContent='ALL 4 ENTRIES';
     }else{
       const p=c.projects[entry];
-      $('#project-detail').innerHTML=`<p class="entry-kicker">${esc(c.subtitle)}</p><h2 class="entry-title">${esc(p.title)}</h2><p class="entry-hook">${esc(p.hook)}</p><p class="entry-role">${esc(p.role)}</p><span class="entry-status">${esc(p.status)}</span>${markerHTML(p)}<ul class="actions">${p.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>${p.links.length?`<div class="evidence-links">${proofLinks(p)}${p.contextLinks?.length?`<span class="context-evidence-label">BENCHMARK USAGE:</span>${proofLinks({links:p.contextLinks})}`:''}</div>`:''}<button class="back-overview" data-inspect="-1">&lt; ROOM OVERVIEW</button>`;
+      $('#project-detail').innerHTML=`<p class="entry-kicker">${esc(c.subtitle)}</p><h2 class="entry-title">${esc(p.title)}</h2><p class="entry-hook">${esc(p.hook)}</p><p class="entry-role">${esc(p.role)}</p>${contextHTML(p)}<ul class="actions">${p.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>${p.links.length?`<div class="evidence-links">${proofLinks(p)}${p.contextLinks?.length?`<span class="context-evidence-label">BENCHMARK USAGE:</span>${proofLinks({links:p.contextLinks})}`:''}</div>`:''}<button class="back-overview" data-inspect="-1">&lt; ROOM OVERVIEW</button>`;
       $('#page-count').textContent=`ENTRY ${String(entry+1).padStart(2,'0')} / ${String(c.projects.length).padStart(2,'0')}`;
     }
     $('#project-detail').scrollTop=0;
