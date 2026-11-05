@@ -94,10 +94,7 @@ window.PORTFOLIO = {
             "https://openreview.net/forum?id=YGQD8s1zOs"
           ]
         ],
-        "markers": [
-          "NeurIPS workshop · Accepted",
-          "Carnegie Mellon University · Presented"
-        ]
+        "markers": []
       },
       {
         "title": "Terminal-Bench",
