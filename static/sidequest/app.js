@@ -6,7 +6,7 @@
   const W=960,H=640,canvas=$('#scene'),ctx=canvas.getContext('2d');ctx.imageSmoothingEnabled=false;
   const doors={school:[245,240],research:[735,220],policy:[475,479],building:[800,510]};
   const solid=[[165,120,160,110],[650,89,170,120],[380,350,190,118],[725,390,150,105],[49,330,105,57]];
-  let x=400,y=310,dir='down',step=0,moving=false,scale=1,near='',route='',entry=0,walkPath=[],speechTimer=null,transitionTimer=null;
+  let x=400,y=310,dir='down',step=0,moving=false,scale=1,near='',route='',entry=0,walkPath=[],transitionTimer=null;
   const keyState=new Set(),visited=new Set();
   let riding=false,bikeX=335,bikeY=246,propKind='',selectedStar=0,toastTimer=null,rippleStart=-Infinity,pendingEntry=-1;
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');let motion=!reduced.matches;
@@ -40,7 +40,7 @@
   for(const d of [journal,help])d.addEventListener('close',()=>world.focus({preventScroll:true}));
   let tourTimer=null,tourRemaining=0,tourDuration=0,tourLast=0;
   function stopTour(){clearInterval(tourTimer);tourTimer=null;$('#tour-toggle').textContent='▶ GUIDED TOUR';$('#tour-toggle').setAttribute('aria-pressed','false');$('#tour-track').hidden=true;}
-  function markerHTML(p){return (p.markers?.length?`<div class="institution-markers">${p.markers.map(m=>`<span>${esc(m)}</span>`).join('')}</div>`:'')+(p.context?`<p class="institution-context">${esc(p.context)}</p>`:'');}
+  function contextHTML(p){return (p.context?`<p class="institution-context">${esc(p.context)}</p>`:'');}
   function proofLinks(p,firstOnly=false){const links=firstOnly?p.links.slice(0,1):p.links;return links.map(([label,url])=>`<a target="_blank" rel="noopener noreferrer" href="${esc(url)}">${esc(label)}</a>`).join('');}
   function showEntry(n,manual=true){
     const focusWasMenu=$('#project-menu').contains(document.activeElement);
@@ -48,11 +48,11 @@
     const c=data[route];if(!c)return;entry=Math.max(-1,Math.min(c.projects.length-1,n));
     $('#project-menu').innerHTML=`<button data-entry="-1" aria-current="${entry===-1}">Room overview</button>`+c.projects.map((p,i)=>`<button data-entry="${i}" aria-current="${i===entry}">${esc(p.title)}</button>`).join('');
     if(entry===-1){
-      $('#project-detail').innerHTML=`<p class="entry-kicker">ROOM NOTES / AT A GLANCE</p><h2 class="overview-title">${esc(c.name)}</h2><div class="room-overview">${c.projects.map((p,i)=>`<article class="overview-item"><span class="overview-number">0${i+1}</span><div><button class="overview-heading" data-inspect="${i}">${esc(p.title)}</button><p>${esc(p.hook)}</p>${markerHTML(p)}<div class="overview-links"><button data-inspect="${i}">INSPECT > </button>${proofLinks(p,true)}</div></div></article>`).join('')}</div>`;
+      $('#project-detail').innerHTML=`<p class="entry-kicker">ROOM NOTES / AT A GLANCE</p><h2 class="overview-title">${esc(c.name)}</h2><div class="room-overview">${c.projects.map((p,i)=>`<article class="overview-item"><span class="overview-number">0${i+1}</span><div><button class="overview-heading" data-inspect="${i}">${esc(p.title)}</button><p>${esc(p.hook)}</p>${contextHTML(p)}<div class="overview-links"><button data-inspect="${i}">INSPECT > </button>${proofLinks(p,true)}</div></div></article>`).join('')}</div>`;
       $('#page-count').textContent='ALL 4 ENTRIES';
     }else{
       const p=c.projects[entry];
-      $('#project-detail').innerHTML=`<p class="entry-kicker">${esc(c.subtitle)}</p><h2 class="entry-title">${esc(p.title)}</h2><p class="entry-hook">${esc(p.hook)}</p><p class="entry-role">${esc(p.role)}</p><span class="entry-status">${esc(p.status)}</span>${markerHTML(p)}<ul class="actions">${p.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>${p.links.length?`<div class="evidence-links">${proofLinks(p)}${p.contextLinks?.length?`<span class="context-evidence-label">BENCHMARK USAGE:</span>${proofLinks({links:p.contextLinks})}`:''}</div>`:''}<button class="back-overview" data-inspect="-1">&lt; ROOM OVERVIEW</button>`;
+      $('#project-detail').innerHTML=`<p class="entry-kicker">${esc(c.subtitle)}</p><h2 class="entry-title">${esc(p.title)}</h2><p class="entry-hook">${esc(p.hook)}</p><p class="entry-role">${esc(p.role)}</p>${contextHTML(p)}<ul class="actions">${p.actions.map(a=>`<li>${esc(a)}</li>`).join('')}</ul>${p.links.length?`<div class="evidence-links">${proofLinks(p)}${p.contextLinks?.length?`<span class="context-evidence-label">BENCHMARK USAGE:</span>${proofLinks({links:p.contextLinks})}`:''}</div>`:''}<button class="back-overview" data-inspect="-1">&lt; ROOM OVERVIEW</button>`;
       $('#page-count').textContent=`ENTRY ${String(entry+1).padStart(2,'0')} / ${String(c.projects.length).padStart(2,'0')}`;
     }
     $('#project-detail').scrollTop=0;
@@ -77,12 +77,10 @@
   $('#project-detail').addEventListener('wheel',stopTour,{passive:true});$('#project-detail').addEventListener('touchstart',stopTour,{passive:true});
   $('#project-detail').addEventListener('keydown',stopTour);
   $('#previous-project').addEventListener('click',()=>showEntry(entry-1));$('#next-project').addEventListener('click',()=>showEntry(entry+1));
-  function finishSpeech(){clearInterval(speechTimer);if(data[route])$('#speech').textContent=data[route].speech;}
-  $('#finish-speech').addEventListener('click',finishSpeech);
-  function speak(text){clearInterval(speechTimer);$('#speech').textContent='';if(!motion){$('#speech').textContent=text;return;}let i=0;speechTimer=setInterval(()=>{i+=2;$('#speech').textContent=text.slice(0,i);if(i>=text.length)clearInterval(speechTimer);},18);}
+  function finishSpeech(){if(data[route])$('#speech').textContent=data[route].speech;}
   function renderRoute(){
     const k=location.hash.slice(1);
-    if(!data[k]){stopTour();route='';clearInterval(speechTimer);if(room.open)room.close();document.title='Boden’s World';return;}
+    if(!data[k]){stopTour();route='';if(room.open)room.close();document.title='Boden’s World';return;}
     dismissWelcome();keyState.clear();walkPath=[];route=k;[x,y]=doors[k];camera();
     if(journal.open)journal.close();if(help.open)help.close();if(prop.open)prop.close();
     visited.add(k);updateJournal();$('#room-title').textContent=data[k].name.toUpperCase();
@@ -91,7 +89,7 @@
     showEntry(pendingEntry);pendingEntry=-1;finishSpeech();$('#leave-room').focus({preventScroll:true});document.title=data[k].name+' — Boden’s World';
   }
   function enter(k,detail=-1){if(!data[k])return;pendingEntry=detail;dismissWelcome();keyState.clear();walkPath=[];[x,y]=doors[k];camera();clearTimeout(transitionTimer);const t=$('#transition');t.classList.remove('active');void t.offsetWidth;if(motion)t.classList.add('active');transitionTimer=setTimeout(()=>{if(location.hash==='#'+k)renderRoute();else location.hash=k;t.classList.remove('active');},motion?190:0);}
-  function leave(){stopTour();clearInterval(speechTimer);history.replaceState(null,'',location.pathname+location.search);route='';room.close();document.title='Boden’s World';}
+  function leave(){stopTour();history.replaceState(null,'',location.pathname+location.search);route='';room.close();document.title='Boden’s World';}
   $('#leave-room').addEventListener('click',leave);room.addEventListener('cancel',e=>{e.preventDefault();leave();});room.addEventListener('close',()=>world.focus({preventScroll:true}));
   room.addEventListener('keydown',e=>{if(e.key==='ArrowRight'&&e.target.tagName!=='A'){e.preventDefault();showEntry(entry+1);}if(e.key==='ArrowLeft'&&e.target.tagName!=='A'){e.preventDefault();showEntry(entry-1);}});
   document.addEventListener('click',e=>{const a=e.target.closest('a[href^="#"]');if(a&&data[a.hash.slice(1)]){e.preventDefault();enter(a.hash.slice(1));}});
@@ -133,7 +131,7 @@
     dismissWelcome();keyState.clear();walkPath=[];
     riding=!riding;
     if(riding){x=bikeX;y=bikeY+13;toast('BICYCLE EQUIPPED / A LITTLE FASTER NOW.');}
-    else{bikeX=Math.round(x);bikeY=Math.round(y);const b=$('#bicycle-prop');b.style.setProperty('--x',bikeX/W*100);b.style.setProperty('--y',bikeY/H*100);toast('BICYCLE PARKED.');}
+    else{bikeX=Math.round(x);bikeY=Math.round(y-13);const b=$('#bicycle-prop');b.style.setProperty('--x',bikeX/W*100);b.style.setProperty('--y',bikeY/H*100);toast('BICYCLE PARKED.');}
     $('#bicycle-prop').hidden=riding;$('#park-bike').hidden=!riding;camera();world.focus({preventScroll:true});
   }
   $('#park-bike').addEventListener('click',toggleBike);
